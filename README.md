@@ -1,106 +1,54 @@
-# Welcome to your Expo app 👋
+# My Timer App ⏱️
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+A customizable multi-timer app built with React Native. Users can create, manage, and interact with multiple timers grouped by categories, with progress visualization and grouped actions.
 
-## Get started
+---
 
-1. Install dependencies
+## 🚀 Features
 
+- Create and manage multiple timers
+- Categorize timers for better organization
+- Visual progress indicators
+- Grouped start/pause/reset actions
+- Persistent data storage
+
+---
+
+## 📱 Download the APK
+
+You can download the latest release here:
+
+👉 [Download APK](https://expo.dev/accounts/myisa/projects/timer/builds/6566135f-ac36-4f7a-9380-78e1120e5589)
+
+> On devices running Android 8.0 (API level 26) and higher, you must navigate to the Install unknown apps system settings screen to enable app installations from a particular location (i.e. the web browser you are downloading the app from).
+On devices running Android 7.1.1 (API level 25) and lower, you should enable the Unknown sources system setting, found in Settings > Security on your device.
+
+---
+
+## 🛠️ Built With
+
+- [React Native](https://reactnative.dev/)
+- [Expo](https://expo.dev/) *(if using)*
+- [React Navigation](https://reactnavigation.org/)
+- [Redux](https://redux.js.org/) *(if used)*
+
+---
+
+## 💻 Getting Started (Development)
+
+1. **Clone the repo**
    ```bash
-   npm install
-   ```
+   git clone https://github.com/your-username/your-repo.git
+   cd your-repo
 
-2. Start the app
+## App Highlights 🚀
 
-   ```bash
-   npx expo start
-   ```
-
-In the output, you'll find options to open the app in a
-
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
-
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
-
-## Get a fresh project
-
-When you're ready, run:
-
-```bash
-npm run reset-project
-```
-
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
-
-## Learn more
-
-To learn more about developing your project with Expo, look at the following resources:
-
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
-
-Navigation
-
-
-
-The app uses expo-router. Make sure your development environment supports it. The main screen is the timer list; navigate to history via the top-right button.
-
-
-
-Assumptions
-
-
-
-The environment supports React Native with Expo.
-
-The user has Node.js and npm or yarn installed.
-
-AsyncStorage (@react-native-async-storage/async-storage) is properly linked by Expo.
-
-Timers durations are entered in seconds.
-
-Categories are user-defined strings; timers are grouped accordingly.
-
-The timer remaining value decrements every second only if running.
-
-Only one instance of the app is modifying AsyncStorage at a time to avoid race conditions.
-
-The device has persistent storage available for AsyncStorage.
-
-Navigation is handled by expo-router.
-
-UI uses basic React Native components and @expo/vector-icons.
-
-Completed timers are stored in a simple array with timestamps in local string format.
-
-The timer completion modal appears for each timer when it finishes counting down.
-
-
-
-Features
-
-
-Create timers with name, duration (seconds), and category.
-
-Start, pause, reset, and delete individual timers.
-
-Start, pause, reset all timers within a category.
-
-Collapse/expand categories.
-
-Persist timers and completed history in AsyncStorage.
-
-Show a modal when a timer completes.
-
-Navigate to history view (assumed implemented in another screen).
-
+- Built with **Expo** and **expo-router** for seamless navigation and development.
+- Create multiple timers with **custom names**, **durations (in seconds)**, and **categories**.
+- Group timers by **user-defined categories** with expand/collapse functionality.
+- Control timers individually or by category: **start, pause, reset, and delete**.
+- **Persist timers and history** locally using AsyncStorage for data retention.
+- **Modal alerts** notify users when timers complete.
+- Navigate easily between the timer list and **history view**.
+- Clean and simple UI using React Native components and Expo vector icons.
+- Assumes environment with Node.js, npm/yarn, and properly linked AsyncStorage.
