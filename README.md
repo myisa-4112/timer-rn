@@ -51,9 +51,16 @@ Join our community of developers creating universal apps.
 
 Navigation
 
+
+
 The app uses expo-router. Make sure your development environment supports it. The main screen is the timer list; navigate to history via the top-right button.
 
+
+
 Assumptions
+
+
+
 The environment supports React Native with Expo.
 
 The user has Node.js and npm or yarn installed.
@@ -78,7 +85,11 @@ Completed timers are stored in a simple array with timestamps in local string fo
 
 The timer completion modal appears for each timer when it finishes counting down.
 
+
+
 Features
+
+
 Create timers with name, duration (seconds), and category.
 
 Start, pause, reset, and delete individual timers.
